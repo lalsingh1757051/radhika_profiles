@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join me</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 520px;
+            box-shadow: 0px 0px 10px 1px black;
+            margin: 50px auto;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0px auto;
+            border-radius: 100%;
+            padding: 4px;
+        }
+
+        .logo-border {
+            width: 80px;
+            height: 80px;
+            margin: 0px auto;
+            border-radius: 100%;
+            padding: 4px;
+            background: linear-gradient(green, yellow, blue);
+            position: absolute;
+            top: 60px;
+            z-index: -1;
+            margin-left: -4px;
+            animation-name: logo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes logo {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+
+        .dp {
+            width: 100%;
+            border-radius: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 50px;
+            background: url(text-bg.jpg) center/cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        .links {
+            width: 100%;
+            height: 320px;
+            background: rgba(0, 0, 0, 0.086);
+            margin: -20px auto;
+            border-radius: 10px;
+            padding-top: 5px;
+        }
+
+        .link {
+            width: 90%;
+            height: 60px;
+            background: #ffffff;
+            margin: 15px auto;
+            border-radius: 10px;
+            display: flex;
+            transition: .5s;
+        }
+
+        .link:hover {
+            box-shadow: 0px 0px 5px 1px black;
+        }
+
+        .link:hover .icon img {
+            scale: 1.2;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border-radius: 100%;
+            /* background: rgba(0, 0, 0, 0.414); */
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            width: 60%;
+            height: 30px;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px auto;
+            background: rgba(0, 0, 255, 0.434);
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        a:hover {
+            background: rgba(0, 0, 255, 0.638);
+        }
+
+        a:hover .correct {
+            filter: brightness(100);
+        }
+
+
+        .name {
+            display: flex;
+            /* background: yellow; */
+        }
+
+        .icon img {
+            width: 100%;
+            transition: .5s;
+        }
+
+        .verified {
+            width: 35px;
+        }
+
+        .correct {
+            width: 20px;
+            position: relative;
+            top: 5px;
+            left: 2px;
+            filter: contrast(10);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <img class="dp" src="dp.png" alt="">
+            <div class="logo-border"></div>
+        </div>
+        <marquee class="name" behavior="scroll" direction="left">
+            <h1>RADHIKA CHAUDHARY
+                <span>
+                    <img class="verified" src="icon/verified.png" alt="">
+                </span>
+            </h1>
+        </marquee>
+        <div class="links">
+
+            <div class="link">
+                <div class="icon">
+                    <img src="icon/whatsapp.webp" alt="">
+                </div>
+
+                <a href="https://wa.me/8171176170?text=Please send me your details" target="_blank">Whatsapp
+                    <span>
+                        <img class="correct" src="icon/correct.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="link">
+                <div class="icon">
+                    <img src="icon/fb-icon.jpg" alt="">
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=100072669891524&mibextid=ZbWKwL"
+                    target="_blank">Facebook
+                    <span>
+                        <img class="correct" src="icon/correct.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="link">
+                <div class="icon">
+                    <img src="icon/instagram.png" alt="">
+                </div>
+                <a href="https://instagram.com/radhika_chaudhary_jii?igshid=NTc4MTIwNjQ2YQ==" target="_blank">Instagram
+                    <span>
+                        <img class="correct" src="icon/correct.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="link">
+                <div class="icon">
+                    <img src="icon/yt.png" alt="">
+                </div>
+                <a href="https://youtube.com/@top10dailygkquestions" target="_blank">Youtube
+                    <span>
+                        <img class="correct" src="icon/correct.png" alt="">
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
